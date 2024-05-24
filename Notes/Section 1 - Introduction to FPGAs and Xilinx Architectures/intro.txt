@@ -1,0 +1,8 @@
+I. Section 1: Introduction to FPGAs and Xilinx Architectures:
+    => In this section, you will get an understanding of:
+        * what a "Field Programmable Gate Array" (FPGA) is,
+        * what the underlying technology is,
+        * and an introduction to the Artix-7 architecture.
+
+    => This part of the book comprises the following chapter:
+        * Chapter 1, Introduction to FPGA Architectures and Xilinx Vivado.
