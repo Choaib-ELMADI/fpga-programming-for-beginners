@@ -7,7 +7,8 @@ This repository contains my notes and insights from reading the book "FPGA Progr
 ## Contents
 
 - **FPGA-Programming-for-Beginners.pdf**: The original PDF file of the book.
-- **Notes**: A directory containing my chapter-by-chapter notes, summaries, and key takeaways.
+- **Docs**: A directory containing my chapter-by-chapter docs, summaries, and key takeaways.
+- **Notes**: A directory containing my notes and key takeaways.
 - **Exercises**: Solutions and explanations for the exercises provided in the book.
 - **Projects**: Any practical projects or examples I work on while following the book.
 
