@@ -1,0 +1,9 @@
+`timescale 1ns / 1ps
+
+#10
+
+$stop;
+
+^
+
+&
