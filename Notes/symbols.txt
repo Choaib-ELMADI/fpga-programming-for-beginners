@@ -1,3 +1,13 @@
+//                      ==> One line comment
+/* ... */               ==> Multiple lines comment
+
+!                       ==> Logical NOT
+&&                      ==> Logical AND
+&                       ==> Bitwise AND
+||                      ==> Logical OR
+|                       ==> Bitwise OR
+^                       ==> Exclusive OR
+
 `timescale 1ns / 1ps
 
 #10

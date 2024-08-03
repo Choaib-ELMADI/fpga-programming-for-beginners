@@ -1,0 +1,4 @@
+1. How Does a Company Create a Programmable Device using an ASIC Process?
+    => ASICs are built using transistors, with modern devices containing up to a billion.
+    => These transistors operate in binary states (0s and 1s), similar to Boolean values (true or false).
+    => The foundation of digital logic, including logic gates, is based on Boolean algebra, developed by George Boole in 1847.

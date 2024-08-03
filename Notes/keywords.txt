@@ -1,17 +1,3 @@
-==> module:
-    * In Verilog, the "module" keyword is used to define a module, which is the basic building block of a Verilog design.
-
-    module hello_world (
-        input wire clk,       // Input clock signal port
-        input wire reset,     // Input reset signal port
-        output wire done      // Output done signal port
-    );
-        // MODULE IMPLEMENTATION HERE
-
-    endmodule
-
-------------------------------
-
 ==> input:
     * The "input" keyword is used to declare input ports of a module.
 
@@ -24,9 +10,28 @@
     * It represents a physical connection or a combinational logic path.
 
 ==> assign:
-    * The "assign" keyword is used for continuous assignments. It is used to assign values to wire data types.
+    * The "assign" keyword is used for continuous assignments.
+    * It is used to assign values to wire data types.
 
-------------------------------
+--- --- --- ---
+
+if (condition) event
+
+--- --- --- ---
+
+==> module:
+    * In Verilog, the "module" keyword is used to define a module, the basic building block of a Verilog design.
+
+    module hello_world (
+        input wire clk,       // Input clock signal port
+        input wire reset,     // Input reset signal port
+        output wire done      // Output done signal port
+    );
+        // MODULE IMPLEMENTATION HERE
+
+    endmodule
+
+--- --- --- ---
 
 reg
 
