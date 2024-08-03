@@ -15,20 +15,23 @@ This repository contains my notes and insights from reading the book "FPGA Progr
 ## Goals
 
 - To gain a solid understanding of FPGA programming concepts and techniques.
-
 - To create a comprehensive set of notes and resources that can help others who are learning FPGA programming.
-
 - To document my progress and reflections as I go through the book.
+
+## Technical requirements
+
+Unlike programming languages, `SystemVerilog` is a _hardware description language (HDL)_, and to really see the fruits of your work in this book, you will need an FPGA board to load your designs into. The two recommended boards are:
+
+- Nexys A7
+- Basys 3 Artix-7
 
 ## How to Use This Repository
 
 - **Reading the Book**: Start by downloading the PDF file `FPGA-Programming-for-Beginners.pdf` and follow along.
-
 - **Notes and Summaries**: Check the `Notes` directory for detailed notes and summaries of each chapter. These can be used as a quick reference or refresher.
-
 - **Exercises and Projects**: Explore the `Exercises` and `Projects` directories to see practical implementations and examples.
 
-## Feel free to explore each folder to access the resources and projects provided.
+Feel free to explore each folder to access the resources and projects provided.
 
 <br>
 
