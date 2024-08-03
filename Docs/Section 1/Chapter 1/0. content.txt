@@ -1,6 +1,0 @@
-I. Introduction to FPGA Architectures and Xilinx Vivado:
-    => In this chapter, we are going to cover the following main topics:
-        * What is an ASIC?
-        * How does a company create an FPGA?
-        * What makes up an FPGA?
-        * How can we use the Xilinx Vivado tools to design, test, and implement an FPGA?

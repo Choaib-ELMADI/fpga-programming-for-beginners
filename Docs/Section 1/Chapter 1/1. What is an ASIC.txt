@@ -1,25 +1,25 @@
 1. What is an ASIC?
-    => ASIC means: Application Specific Integrated Circuit.
-    => ASICs are the fundamental building blocks of modern electronics - your laptop, PC...
+    => ASIC stands for Application Specific Integrated Circuit.
+    => ASICs are the fundamental building blocks of modern electronics.
     => They are also the fundamental building blocks upon which some FPGAs are built from.
-    => In short, an ASIC is a custom-built chip designed for some specific purposes and to solve some specific problems.
+    => In short, an ASIC is a custom-built chip designed for a particular use or product.
 
 2. Why Choose ASIC or FPGA?
     => ASICs:
-        * "Cost Efficiency in High Volumes": Economical when produced in large quantities (calculators, flash drives, cell phones).
-        * "Performance and Complexity": Necessary for high-speed and highly complex logic applications.
-        * "Development Costs":
+        * Cost Efficiency in High Volumes: Economical when produced in large quantities (calculators, flash drives, cell phones).
+        * Performance and Complexity: Necessary for high-speed and highly complex logic applications.
+        * Development Costs:
             > High Non-Recurring Engineering (NRE) costs, including mask sets and extensive engineering teams.
             > Re-spins (bug fixes) add to costs due to complexity.
-        * "Per Part Cost": Can be very low for simple devices, but high for complex ones.
-    
+        * Per Part Cost: Can be very low for simple devices, but high for complex ones.
+
     => FPGAs:
-        * "Development Flexibility":
+        * Development Flexibility:
             > Can be developed by small teams or even individuals.
             > NRE costs are minimal as they are mostly borne by the FPGA vendor.
             > Re-spins are free, only costing time for reprogramming.
-        * "Per Part Cost": Generally higher than ASICs.
-        * "Tool Costs":
+        * Per Part Cost: Generally higher than ASICs.
+        * Tool Costs:
             > Development tools like Xilinx Vivado are available for free or at low cost for small-scale use.
             > Professional tools are relatively affordable compared to ASIC tools.
-        * "Risk and Training": Lower risk and simpler training compared to ASICs, as mistakes are inexpensive to fix and tools are user-friendly.
+        * Risk and Training: Lower risk and simpler training compared to ASICs, as mistakes are inexpensive to fix and tools are user-friendly.
