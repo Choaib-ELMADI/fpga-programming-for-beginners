@@ -1,0 +1,7 @@
+1. Introducing FPGAs:
+    => In ASICs, a gate array is a "sea of gates" that can be customized with a few mask steps, making it cheaper since only specific masks are needed.
+    => FPGAs extend this concept by including programmable interconnects within the device.
+
+    => The core of an FPGA is its programmable fabric, composed of LUTs and flip-flops forming slices and CLBs.
+    => These blocks are interconnected by routing channels, enabling flexible configurations.
+    => FPGAs also include various additional resources like block RAMs, SERDES cores, DSP elements, and various types of programmable I\O.
