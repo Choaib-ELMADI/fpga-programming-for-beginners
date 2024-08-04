@@ -5,3 +5,20 @@
     => The core of an FPGA is its programmable fabric, composed of LUTs and flip-flops forming slices and CLBs.
     => These blocks are interconnected by routing channels, enabling flexible configurations.
     => FPGAs also include various additional resources like block RAMs, SERDES cores, DSP elements, and various types of programmable I\O.
+
+2. Storage:
+
+3. Clocking:
+
+4. I/Os:
+
+5. DSP:
+    => Digital Signal Processing (DSP) is the use of digital techniques to analyze, modify, and improve signals such as audio, video, and sensor data.
+    => It involves mathematical operations to process these signals in a digital format, often to enhance quality, extract information, or transform them for various applications.
+
+    => FPGAs are widely used in Digital Signal Processing applications, particularly those requiring many multipliers and Multiply Accumulate (MAC) functions. => One of the early innovations in FPGAs was the inclusion of hard multipliers and DSP blocks specifically designed to perform MAC functions.
+
+6. ASMBL Architecture:
+    => ASMBL refers to Advanced Silicon Modular Block
+    => ASMBL architecture uses a modular approach to FPGA design, consisting of various pre-designed blocks that can be configured and combined to build complex digital systems efficiently.
+    => This approach offers flexibility, efficient use of resources, and scalability.
