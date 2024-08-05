@@ -1,0 +1,44 @@
+1. Evaluation Boards:
+    => Digilent offers affordable FPGA evaluation boards with convenient features, such as a built-in USB to UART controller.
+    => This controller is recognized by Xilinx Vivado as a programming cable, simplifying device configuration.
+    => Additionally, these boards can be powered via the same USB cable, making them user-friendly and easy to set up.
+
+2. Nexys A7 100T (or 50T):
+    => The board features are as follows:
+        • Artix-7 XC7A100T or 50T
+        • 450+MHz operation
+        • 128 MB DDR2
+        • Serial Flash
+        • Built-in USB UART for downloading images and ChipScope debugging
+        • MicroSD card reader
+        • 10/100 Ethernet PHY
+        • PWM audio output/microphone input
+        • Temperature sensor
+        • 3 axis accelerometer
+        • 16 switches
+        • 16 LEDs
+        • 5 pushbuttons
+        • Two 3 color LED
+        • Two 4-digit 7-segment displays 
+        • USB host device support 
+        • Five PMOD (one XADC)
+
+3. Basys 3:
+    => The board features are as follows:
+        • Artix-7 XC7A35T
+        • 450+Mhz operation
+        • 128MB DDR2
+        • Serial Flash
+        • Built-in USB UART for downloading images and ChipScope debugging
+        • MicroSD card reader
+        • 10/100 Ethernet PHY
+        • PWM audio output/microphone input
+        • 16 switches
+        • 16 LEDs
+        • 5 pushbuttons
+        • Two 3-color LEDs
+        • Single 4-digit, 7-segment displays 
+        • USB host device support 
+        • Four PMODs (one dual purpose supporting XADC)
+
+4. 
