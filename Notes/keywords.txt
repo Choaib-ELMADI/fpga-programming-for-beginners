@@ -1,38 +1,30 @@
-==> input:
-    * The "input" keyword is used to declare input ports of a module.
+input                               -> Declare input ports of a module
 
-==> output:
-    * The "output" keyword is used to declare output ports of a module.
+output                              -> Declare output ports of a module
 
-==> wire:
-    * The "wire" keyword is used to declare a signal in Verilog.
-    * A wire is used for continuous assignment and to connect different parts of a circuit.
-    * It represents a physical connection or a combinational logic path.
+wire                                -> Declare a signal in Verilog
+                                    -> Used for continuous assignment and to connect different parts of a circuit
+                                    -> It represents a physical connection or a combinational logic path
 
-==> assign:
-    * The "assign" keyword is used for continuous assignments.
-    * It is used to assign values to wire data types.
+assign                              -> Used for continuous assignments
+                                    -> It is used to assign values to wire data types
 
---- --- --- ---
+'timescale <tu>/<tp>                -> Define the timescale that we will be operating at in the simulator
+                                    -> tu for time unit, defines the value and unit of delays
+                                    -> tp for time precision, specifies the rounding precision
+                                    -> These settings have no effect on synthesis
 
-if (condition) event
-
---- --- --- ---
-
-==> module:
-    * In Verilog, the "module" keyword is used to define a module, the basic building block of a Verilog design.
-
+module                              -> Define a module, the basic building block of a Verilog design
     module hello_world (
-        input wire clk,       // Input clock signal port
-        input wire reset,     // Input reset signal port
-        output wire done      // Output done signal port
+        input  wire clk,            // Input clock signal port
+        input  wire reset,          // Input reset signal port
+        output wire done            // Output done signal port
     );
+        // ...
         // MODULE IMPLEMENTATION HERE
+        // ...
+    endmodule // hello_world
 
-    endmodule
+reg                                 -> 
 
---- --- --- ---
-
-reg
-
-dut
+dut                                 -> 
