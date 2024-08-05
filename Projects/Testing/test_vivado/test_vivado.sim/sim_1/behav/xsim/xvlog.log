@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Choaib ELMADI/Downloads/D.I.F.Y/Electronics/Electronics/Electronics/FPGA/FPGA-Programming-for-Beginners/Projects/test_vivado/test_vivado.srcs/sources_1/new/half_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module half_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Choaib ELMADI/Downloads/D.I.F.Y/Electronics/Electronics/Electronics/FPGA/FPGA-Programming-for-Beginners/Projects/test_vivado/test_vivado.srcs/sim_1/new/half_adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module half_adder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Choaib ELMADI/Downloads/D.I.F.Y/Electronics/Electronics/Electronics/FPGA/FPGA-Programming-for-Beginners/Projects/test_vivado/test_vivado.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

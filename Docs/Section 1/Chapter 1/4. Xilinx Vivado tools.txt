@@ -41,4 +41,16 @@
         • USB host device support 
         • Four PMODs (one dual purpose supporting XADC)
 
-4. 
+4. Introducing Vivado:
+    => Vivado is a Xilinx tool used to design, simulate, implement, and debug FPGA designs.
+    => It can be run as a command-line tool in non-project mode, or in project mode using the GUI.
+
+    => Directory Structure:
+        project_name
+        ├── hdl
+        │   └── project_name.sv
+        ├── tb
+        │   └── tb.sv
+        └── build
+            ├── xdc
+            └── IP
