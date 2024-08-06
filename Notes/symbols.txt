@@ -10,6 +10,8 @@
 
 'timescale <tu>/<tp>            --> Define timescales
 
+[n:m]                           --> Define multiple bits input or output, with n > m
+
 #10
 
 $stop;

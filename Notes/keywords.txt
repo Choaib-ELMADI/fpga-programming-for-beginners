@@ -6,6 +6,8 @@ wire                                -> Declare a signal in Verilog
                                     -> Used for continuous assignment and to connect different parts of a circuit
                                     -> It represents a physical connection or a combinational logic path
 
+logic                               -> Used to represent digital signals that can have multiple states
+
 assign                              -> Used for continuous assignments
                                     -> It is used to assign values to wire data types
 
@@ -13,6 +15,8 @@ assign                              -> Used for continuous assignments
                                     -> tu for time unit, defines the value and unit of delays
                                     -> tp for time precision, specifies the rounding precision
                                     -> These settings have no effect on synthesis
+
+
 
 module                              -> Define a module, the basic building block of a Verilog design
     module hello_world (
@@ -24,6 +28,8 @@ module                              -> Define a module, the basic building block
         // MODULE IMPLEMENTATION HERE
         // ...
     endmodule // hello_world
+
+
 
 reg                                 -> 
 

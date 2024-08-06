@@ -1,0 +1,25 @@
+=> Testbench modules are top-level modules. They should not have any ports.
+
+=> In Verilog, logic variables can hold the following four-state values:
+    0 ---> Logic low (false)
+    1 ---> Logic high (true)
+    X ---> Unknown (an indeterminate state)
+    Z ---> High-impedance (tri-state, effectively disconnected)
+
+=> In VHDL, there isn't a direct equivalent called logic. The `std_logic` type in the `std_logic_1164` library serves similar purposes.
+    The `std_logic` type can represent multiple values, including:
+    0 ---> Logic low
+    1 ---> Logic high
+    X ---> Unknown
+    Z ---> High-impedance
+    U ---> Uninitialized
+    W ---> Weak unknown
+    L ---> Weak low
+    H ---> Weak high
+    - ---> Don't care
+
+=> In a testbench module, we create instances of the main modules we created.
+    There are multiple ways of connecting ports:
+    .* which will connect all ports with the same name.
+    .<name> which uses the name of the port you wish to connect.
+    .<old_name>(<new_name>) which allows port renaming.
