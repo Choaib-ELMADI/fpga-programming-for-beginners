@@ -1,7 +1,0 @@
-
-*** Running vivado
-    with args -log half_adder.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source half_adder.tcl -notrace
-
-
-ECHO is off.
-ECHO is off.
