@@ -1,36 +1,39 @@
-input                               -> Declare input ports of a module
+input                               => Declare input ports of a module
 
-output                              -> Declare output ports of a module
+output                              => Declare output ports of a module
 
-wire                                -> Declare a signal in Verilog
+wire                                => Declare a signal in Verilog
                                     -> Used for continuous assignment and to connect different parts of a circuit
                                     -> It represents a physical connection or a combinational logic path
 
-logic                               -> Used to represent digital signals that can have multiple states
+logic                               => SystemVerilog data type used to represent digital signals that can have multiple states
 
-assign                              -> Used for continuous assignments
+assign                              => Used for continuous assignments
                                     -> It is used to assign values to wire data types
 
-'timescale <tu>/<tp>                -> Define the timescale that we will be operating at in the simulator
+'timescale <tu>/<tp>                => Define the timescale that we will be operating at in the simulator
                                     -> tu for time unit, defines the value and unit of delays
                                     -> tp for time precision, specifies the rounding precision
                                     -> These settings have no effect on synthesis
 
+module                              => Define a module, the basic building block of a Verilog design
+                                    -> Contains ports, signals, and behavioral descriptions
 
+endmodule                           => Marks the end of a module definition
 
-module                              -> Define a module, the basic building block of a Verilog design
-    module hello_world (
-        input  wire clk,            // Input clock signal port
-        input  wire reset,          // Input reset signal port
-        output wire done            // Output done signal port
-    );
-        // ...
-        // MODULE IMPLEMENTATION HERE
-        // ...
-    endmodule // hello_world
+initial                             => A procedural block in Verilog and SystemVerilog that executes once at the start of the simulation
+                                    -> Used for initializing signals, applying stimulus, or controlling simulation flow
 
+$printtimescale(module_name)        => System task that prints the timescale of the specified module
+                                    -> Useful for debugging and verifying the simulation's time unit and precision
 
+$display                            => System task used to display formatted text and signal values during simulation
+                                    -> Often used for debugging and monitoring signal values
 
-reg                                 -> 
+#delay                              => Specifies a time delay in a simulation
 
-dut                                 -> 
+$stop                               => System task that halts the simulation
+
+SIGNAL = '0;                        => Assigns all bits of the SIGNAL to zero
+                                    -> The '0 syntax initializes all bits of the vector to the binary value 0
+                                    -> Commonly used for resetting signals or initializing states

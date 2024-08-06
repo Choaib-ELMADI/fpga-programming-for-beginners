@@ -23,3 +23,7 @@ module tb;
         $display("PASS: logic_ex test PASSED!");
         $stop;
     end
+
+
+
+endmodule
