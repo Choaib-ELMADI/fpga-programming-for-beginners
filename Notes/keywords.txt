@@ -37,3 +37,15 @@ $stop                               => System task that halts the simulation
 SIGNAL = '0;                        => Assigns all bits of the SIGNAL to zero
                                     -> The '0 syntax initializes all bits of the vector to the binary value 0
                                     -> Commonly used for resetting signals or initializing states
+
+always @(signal1, signal2)          => Triggers the always block whenever there is a change in signal1 or signal2
+                                    -> Commonly used to describe combinational logic in Verilog \ SystemVerilog
+
+&signal_vector                      => Reduction AND operation, performs logical AND across all bits of signal_vector
+                                    -> Used to check if all bits are set to 1
+
+|signal_vector                      => Reduction OR operation, performs logical OR across all bits of signal_vector
+                                    -> Used to check if at least one bit is set to 1
+
+^signal_vector                      => Reduction XOR operation, performs logical XOR across all bits of signal_vector
+                                    -> Used to check if an odd number of bits are set to 1
