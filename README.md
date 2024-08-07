@@ -4,6 +4,14 @@
 
 This repository contains my notes and insights from reading the book "FPGA Programming for Beginners" by Frank Bruno. The book serves as an introductory guide to FPGA (Field-Programmable Gate Array) programming, and this repository will document my learning journey.
 
+<div align="center">
+
+![Basys3 FPGA Board](./Images/basys-3.png)
+
+<u>Digilent Basys 3 FPGA Board</u>
+
+</div>
+
 ## Contents
 
 - **FPGA-Programming-for-Beginners.pdf**: The original PDF file of the book.
