@@ -1,0 +1,11 @@
+II. Section 2: Introduction to Verilog RTL Design, Simulation, and Implementation:
+    => In this section:
+        you will learn to program SystemVerilog up to an intermediate level. 
+        You will design, test, and implement multiple designs from specification through to implementation on an actual board (if you desire).
+
+    => This part of the book comprises the following chapters:
+        • Chapter 2, Combinational Logic 
+        • Chapter 3, Counting Button Presses 
+        • Chapter 4, Let's Build a Calculator 
+        • Chapter 5, FPGA Resources and How to Use Them
+        • Chapter 6, Math, Parallelism, and Pipelined Design
