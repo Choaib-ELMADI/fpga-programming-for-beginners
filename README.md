@@ -8,8 +8,6 @@ This repository contains my notes and insights from reading the book "FPGA Progr
 
 ![Basys3 FPGA Board](./Images/basys-3.png)
 
-<u>Digilent Basys 3 FPGA Board</u>
-
 </div>
 
 ## Contents
