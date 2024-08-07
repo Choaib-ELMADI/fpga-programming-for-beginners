@@ -23,4 +23,4 @@ module half_adder_tb();
         $stop;
     end
 
-endmodule
+endmodule // half_adder_tb

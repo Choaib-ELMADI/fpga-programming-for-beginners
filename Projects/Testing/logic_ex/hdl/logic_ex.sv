@@ -1,7 +1,7 @@
 `timescale 1ns/10ps
 
 module logic_ex (
-    input  wire  [1:0] SW,
+    input wire  [1:0] SW,
     output logic [3:0] LED
 );
     assign LED[0] = !SW[0];

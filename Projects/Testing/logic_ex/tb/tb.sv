@@ -45,4 +45,4 @@ module tb;
             $stop;
         end
     end
-endmodule
+endmodule // tb
