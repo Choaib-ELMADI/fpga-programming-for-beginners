@@ -48,9 +48,22 @@
     => Directory Structure:
         project_name
         ├── hdl
-        │   └── project_name.sv
+        │   └── project_name.sv // or .v or .vhd
         ├── tb
-        │   └── tb.sv
+        │   └── tb.sv           // or .v or .vhd
         └── build
             ├── xdc
             └── IP
+
+5. Create a Project:
+    => Open the Vivado software
+    => In Quick Start, click Create Project
+    => Click Next, then set the project name and location
+    => Set the project type, RTL Project is recommended
+    => Add project sources:
+        - Set target language
+        - Set simulator language
+        - Create or add files
+    => Add constraints (optional)
+    => Set default parts
+    => Click Finish
