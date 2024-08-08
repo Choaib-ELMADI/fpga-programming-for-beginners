@@ -8,6 +8,34 @@
         - external memory managed by a memory controller
 
 2. Built-in Data Types:
-    => 
+    => SystemVerilog has multiple built-in types, but the most interesting ones for design are the logic and bit type:
+        • logic: can represent a 0, 1, x (undefined or treated as don't care), or z (tri-state or also a don't care).
+        • bit: uses less memory to store than logic, but it can only store a 0 or 1.
 
+    => There are also four other, lesser used two state types:
+        • byte: 8 bits
+        • shortint: 16 bits
+        • int: 32 bits
+        • longint: 64 bits
 
+3. Creating Arrays:
+    => The reason that byte, shortint, int, and longint are not used as much is because typically, you will size your signals as needed; for example:
+        > bit [7:0] my_byte; // define an 8 bit value
+        > Here, my_byte is defined as a packed 8-bit value.
+        > It's possible to also create an unpacked version:
+        > bit my_byte[8]; // define an 8 bit value
+
+    => Multi-dimensional arrays:
+        * Array Declaration:
+            > bit [2:0][7:0] my_byte[1024][768];
+            • [2:0] defines a 3-bit wide vector.
+            • [7:0] defines an 8-bit wide vector.
+            • [1024] and [768] define the size of the array (1024 rows, 768 columns).
+        * Structure of Each Array Element:
+            • Each element in my_byte[row][column] is a set of 3 sub-elements (due to [2:0]), each of which is 8 bits wide ([7:0]).
+            • Think of my_byte[row][column] as a box containing 3 smaller boxes, each holding an 8-bit value.
+        * Array Access:
+            • Accessing the full element: my_byte[0][0] accesses the entire 3-bit vector at the specified row and column.
+            • Accessing a specific sub-element: my_byte[1023][767][2] accesses the 3rd bit slice (which is an 8-bit value) in the last row and last column.
+
+4. 
