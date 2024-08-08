@@ -1,7 +1,13 @@
 1. Introducing Data Types:
+    => In Hardware Design Languages (HDLs), like SystemVerilog, you are not just writing software but building hardware.
+    => Here, you deal with physical storage like registers and wires.
+    => In HDLs, you create hardware structures. The flow includes:
+        - logic elements
+        - lookup tables (LUTs)
+        - registers
+        - external memory managed by a memory controller
 
-
-
-
+2. Built-in Data Types:
+    => 
 
 
