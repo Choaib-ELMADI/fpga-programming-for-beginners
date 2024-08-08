@@ -9,3 +9,9 @@ II. Section 2: Introduction to Verilog RTL Design, Simulation, and Implementatio
         • Chapter 4, Let's Build a Calculator 
         • Chapter 5, FPGA Resources and How to Use Them
         • Chapter 6, Math, Parallelism, and Pipelined Design
+
+    => In chapter 2, we are going to cover the following main topics:
+        • Creating SystemVerilog modules
+        • Introducing data types
+        • Packaging up code using functions
+        • Project - creating combinational logic

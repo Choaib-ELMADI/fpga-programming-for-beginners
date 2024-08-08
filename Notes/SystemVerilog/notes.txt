@@ -1,0 +1,17 @@
+=> Testbench modules are top-level modules. They should not have any ports.
+
+=> In Verilog, logic variables can hold the following four-state values:
+    0 ---> Logic low (false)
+    1 ---> Logic high (true)
+    X ---> Unknown (an indeterminate state)
+    Z ---> High-impedance (tri-state, effectively disconnected)
+
+=> A testbench module is a specialized piece of code used in HDLs to verify and validate the functionality of a design under test (DUT).
+-> The testbench generates a set of input signals, often referred to as stimulus, to drive the DUT. This includes all possible input scenarios that the design may encounter during actual operation.
+-> If the DUT is a synchronous design, the testbench provides clock and reset signals.
+-> The testbench observes the outputs of the DUT and compares them against expected values.
+-> In a testbench module, we create instances of the designs under test.
+-> There are multiple ways of connecting ports:
+    .* which will connect all ports with the same name.
+    .<name> which uses the name of the port you wish to connect.
+    .<old_name>(<new_name>) which allows port renaming.
