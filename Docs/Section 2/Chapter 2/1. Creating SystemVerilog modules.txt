@@ -1,10 +1,12 @@
 1. Creating SystemVerilog Modules:
+    => At the heart of every design are the modules that compose it.
 
-
-
-
-
-
-
-
-
+    => Parameters in SystemVerilog are constants that can be defined within a module to allow for customization and reusability.
+    => They enable designers to control aspects like:
+        - data sizes
+        - logic instantiation
+        - module behavior
+    => Parameters can have default values that can be overridden during module instantiation.
+    => They allow the same module to be used in different configurations without modifying the module's internal code.
+    => A parameter without a default value (e.g., SELECTOR) must be set during instantiation.
+    => Parameters can be integers, strings, or even types.
