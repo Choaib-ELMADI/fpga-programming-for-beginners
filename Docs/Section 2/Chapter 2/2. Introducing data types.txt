@@ -27,15 +27,30 @@
 
     => Multi-dimensional arrays:
         * Array Declaration:
-            > bit [2:0][7:0] my_byte[1024][768];
+            > bit [2:0][7:0] my_array[1024][768];
             • [2:0] defines a 3-bit wide vector.
             • [7:0] defines an 8-bit wide vector.
             • [1024] and [768] define the size of the array (1024 rows, 768 columns).
         * Structure of Each Array Element:
-            • Each element in my_byte[row][column] is a set of 3 sub-elements (due to [2:0]), each of which is 8 bits wide ([7:0]).
-            • Think of my_byte[row][column] as a box containing 3 smaller boxes, each holding an 8-bit value.
+            • Each element in my_array[row][column] is a set of 3 sub-elements (due to [2:0]), each of which is 8 bits wide ([7:0]).
+            • Think of my_array[row][column] as a box containing 3 smaller boxes, each holding an 8-bit value.
         * Array Access:
-            • Accessing the full element: my_byte[0][0] accesses the entire 3-bit vector at the specified row and column.
-            • Accessing a specific sub-element: my_byte[1023][767][2] accesses the 3rd bit slice (which is an 8-bit value) in the last row and last column.
+            • Accessing the full element: my_array[0][0] accesses the entire 3-bit vector at the specified row and column.
+            • Accessing a specific sub-element: my_array[1023][767][2] accesses the 3rd bit slice (which is an 8-bit value) in the last row and last column.
 
-4. 
+4. Querying Arrays:
+    => SystemVerilog provides system functions for accessing array information:
+        > $dimensions(my_array): Returns the number of dimensions in the array.
+        > $left(my_array, [dimension]): Returns the leftmost index in the specified dimension of the array.
+            Example: [1]=1023,[2]=767,[3]=2,[4]=7.
+        > $right(my_array, [dimension]): Returns the rightmost index in the specified dimension of the array. (0 for all the dimensions).
+        > $high(my_array, [dimension]): Returns the largest value in the specified dimension's range.
+        > $low(my_array, [dimension]): Returns the smallest value in the specified dimension's range.
+        > $size(my_array, [dimension]): Returns the size of the specified dimension, calculated as $high(my_array, [dimension]) - $low(my_array, [dimension]) + 1.
+        > $increment(my_array, [dimension]): Returns 1 if $left >= $right; otherwise, returns -1. Useful for for loops.
+        > $bits(): Returns the number of bits used by a particular variable or expression. This is useful for passing size information to instantiations.
+        > $clog2(): Returns the size of an array that can hold the given number of items, not the value that was passed.
+            For example: $clog2(4) returns 2, which can store four values from 0 to 3.
+
+5. Assigning to Arrays:
+    => 
