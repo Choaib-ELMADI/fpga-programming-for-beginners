@@ -53,4 +53,25 @@
             For example: $clog2(4) returns 2, which can store four values from 0 to 3.
 
 5. Assigning to Arrays:
+    => When we want to assign a value to a signal defined as an array, we should size it properly to avoid warnings.
+    => If we don't specify a size, then the size defaults to 32 bits.
+    => Different ways of assigning:
+        > '1 assigns all bits to 1
+        > '0 assigns all bits to 0
+        > 'z assigns all bits to z
+
+    => With single packed dimension:
+        > n'b to specify a binary value of n bits
+        > n'd to specify a decimal value of n bits
+        > n'h to specify a hex value of n bits
+        > Example:
+            logic [63:0] data;
+            assign data = '1;   // same as data = 64'hFFFFFFFFFFFFFFFF;
+            assign data = '0;   // same as data = 64'd0;
+            assign data = 'z;   // same as data = 64'hzzzzzzzzzzzzzzzz;
+            assign data = 0;    // data[31:0] = 0, data[63:32] untouched.
+
+6. 
     => 
+
+
