@@ -6,7 +6,7 @@ This repository contains my notes and insights from reading the book "FPGA Progr
 
 <div align="center">
 
-![Basys3 FPGA Board](./Images/basys-3__2.png)
+![Basys3 FPGA Board](./Images/basys-3__3.png)
 
 </div>
 
