@@ -76,4 +76,8 @@
     => The wire type has what is known as a resolution function.
     => Wire types are the only signals that can be connected to multiple drivers.
 
-7. 
+7. Handling Signed and Unsigned Numbers:
+    => Verilog had just one signed signal type, integer.
+    => SystemVerilog allows us to define both unsigned and signed numbers explicitly for any built-in type: 
+        > bit signed [31:0] signed_vect;        // Create a 32 bit signed value
+        > bit unsigned [31:0] unsigned_vect;    // create a 32 bit unsigned value
