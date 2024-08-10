@@ -81,3 +81,11 @@
     => SystemVerilog allows us to define both unsigned and signed numbers explicitly for any built-in type: 
         > bit signed [31:0] signed_vect;        // Create a 32 bit signed value
         > bit unsigned [31:0] unsigned_vect;    // create a 32 bit unsigned value
+
+8. Casting Signed and Unsigned Numbers:
+    => You can cast an unsigned number to a signed number by using the signed' keyword.
+    => You can cast a signed number to an unsigned number by using the unsigned' keyword.
+    => These are equivalent to the Verilog system functions; that is, $signed() and $unsigned().
+
+9. 
+    => 

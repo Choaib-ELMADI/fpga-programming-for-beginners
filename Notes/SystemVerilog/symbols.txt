@@ -13,3 +13,5 @@
 [n:m]                           --> Define multiple bits input or output, with n > m
 
 #()                             --> Define the parameter list of a module
+
+{}                              --> Concatenation operator
