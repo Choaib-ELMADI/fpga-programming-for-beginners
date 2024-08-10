@@ -71,7 +71,9 @@
             assign data = 'z;   // same as data = 64'hzzzzzzzzzzzzzzzz;
             assign data = 0;    // data[31:0] = 0, data[63:32] untouched.
 
-6. 
-    => 
+6. Handling Multiple-driven Nets: 
+    => The wire type represents 120 different possible values; that is, the four basic values - 0, 1, x, and z - and drive strengths.
+    => The wire type has what is known as a resolution function.
+    => Wire types are the only signals that can be connected to multiple drivers.
 
-
+7. 
