@@ -87,5 +87,16 @@
     => You can cast a signed number to an unsigned number by using the unsigned' keyword.
     => These are equivalent to the Verilog system functions; that is, $signed() and $unsigned().
 
-9. 
-    => 
+9. Creating User-defined Types:
+    => We can create our own types using typedef.
+    => Example:
+        'ifdef FAST_SIM
+            typedef bit bit_t
+        'else
+            typedef logic bit_t
+        'endif
+
+10. Enumerated Types:
+    => Enumerated types are used to make the code more readable.
+    => Example:
+        > enum bit [1:0] { BLUE, RED, GREEN } color;
