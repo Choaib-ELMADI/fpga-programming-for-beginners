@@ -1,6 +1,6 @@
 [![Choaib ELMADI - FPGA](https://img.shields.io/badge/Choaib_ELMADI-FPGA-8800dd)](https://elmadichoaib.vercel.app) ![Status - Learning](https://img.shields.io/badge/Status-Learning-2bd729)
 
-# FPGA Programming for Beginners - Notes and Insights
+# FPGA Programming for Beginners
 
 This repository contains my notes and insights from reading the book "FPGA Programming for Beginners" by Frank Bruno. The book serves as an introductory guide to FPGA (Field-Programmable Gate Array) programming, and this repository will document my learning journey.
 
