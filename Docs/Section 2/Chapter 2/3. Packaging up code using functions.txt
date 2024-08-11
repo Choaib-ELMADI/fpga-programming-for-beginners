@@ -1,0 +1,10 @@
+1. SystemVerilog Functions:
+    => Functions are blocks of code that are reused within the same module or that's common to a group of modules.
+    => Functions can have multiple outputs.
+    => To return the function's value, you can assign the result to the function name or use the return statement.
+
+2. 
+    => 
+
+3. 
+    => 

@@ -49,3 +49,7 @@ always @(signal1, signal2)          => Triggers the always block whenever there 
 
 ^signal_vector                      => Reduction XOR operation, performs logical XOR across all bits of signal_vector
                                     -> Used to check if an odd number of bits are set to 1
+
+function                            => Define a function block
+
+endfunction                         => Define the end of a function block
