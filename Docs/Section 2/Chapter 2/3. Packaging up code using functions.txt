@@ -17,3 +17,6 @@
     => Blocking assignments:
         * Blocking assignments occur immediately.
         * All assignments within an always_comb block will be blocking.
+        * There are several blocking assignments in SystemVerilog:
+            > =, +=, -=, *=, /=, %=, $=, |=, ^=, <<=, >>=, <<<=, >>>=
+            > ++i, i++, --i, i--
