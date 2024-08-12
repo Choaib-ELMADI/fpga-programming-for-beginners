@@ -3,8 +3,17 @@
     => Functions can have multiple outputs.
     => To return the function's value, you can assign the result to the function name or use the return statement.
 
-2. 
-    => 
+2. Creating Combinational Logic:
+    => The two main ways of creating logic are via assign statements and always blocks.
+    => assign statements are convenient when creating simple combinational logic.
+    => An always block allows for more complex functionality to be defined in a single process.
+    => Sensitivity lists are not synthesizable and are only useful in testing.
+    => always_comb is recommended when describing synthesizable code in an always block.
 
-3. 
-    => 
+3. Handling Assignment Operators:
+    => There are two basic types of assignments in SystemVerilog: blocking and non-blocking.
+    => Non-blocking assignments:
+        * A non-blocking assignment is something that is scheduled to occur within a delta when the simulator's time advances.
+    => Blocking assignments:
+        * Blocking assignments occur immediately.
+        * All assignments within an always_comb block will be blocking.
