@@ -1,3 +1,26 @@
 1. if-then-else:
-    if (add == 1) sum = a + b;
-    else sum = a - b;
+    if (add == 1) sum = a + 1;
+    else if (add == 2) sum = a + 2;
+    else sum = a + b;
+
+    * The unique keyword is used to tell the synthesis tool that each if statement in a sequence will not overlap with the others.
+    * This means that exactly one condition should be true, and if multiple conditions could be true, the tool will generate a warning.
+    * Example:
+        > unique if (address[3:0] =?= 4'b00zz) slot = 0;
+        > else if (address[3:0] =?= 4'b01zz) slot = 1;
+        > else if (address[3:0] =?= 4'b1zzz) slot = 2;
+
+    * The priority keyword specifies that the first if condition that evaluates to true should be selected.
+    * All other overlapping conditions that also evaluate to true should be ignored.
+    * Example:
+        > priority if (address[3:0] =?= 4'b00zz) slot = 0;
+        > else if (address[3:0] =?= 4'b01zz) slot = 1;
+        > else if (address[3:0] =?= 4'b1zzz) slot = 2;
+
+2. Comparing values:
+    == and != check if two sides of a comparison are equal or not. But they can't detect undefined values.
+    === and !== are recommended to avoid unanticipated matches.
+    =?= and !?= are called wildcard equality operators. They are used to match against ranges of values.
+
+3. 
+
