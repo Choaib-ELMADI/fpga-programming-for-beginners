@@ -89,12 +89,23 @@
 
 9. Creating User-defined Types:
     => We can create our own types using typedef.
-    => Example:
+    => Practical Example:
         'ifdef FAST_SIM
             typedef bit bit_t
         'else
             typedef logic bit_t
         'endif
+
+    => Creating Structures:
+        * Structures allow us to group signals that belong together.
+        > typedef struct packed { bit [7:0] h; bit [7:0] l; } reg_t;
+            - typedef signifies we are creating a user-defined type.
+            - struct means we are creating a structure.
+            - packed signifies the structure is to be packed in-memory.
+
+    => Creating Unions:
+        * A union allows us to create a variable with multiple representations.
+        > union packed { bit [15:0] x; cpu_reg cr; } a_reg;
 
 10. Enumerated Types:
     => Enumerated types are used to make the code more readable.
