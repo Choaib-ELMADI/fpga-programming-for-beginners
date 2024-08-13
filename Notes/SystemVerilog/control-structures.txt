@@ -36,3 +36,7 @@
 
     => Case statements also support the unique and priority features.
     => Also, we can have a default fall-through case that can be defined. This must be defined if unique is used.
+
+4. Conditional operator:
+    Out = (sel) ? ina : inb;
+    => Writing sel ? … is a shortcut for sel == 1'b1 ? ….
