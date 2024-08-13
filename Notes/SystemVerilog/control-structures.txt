@@ -22,5 +22,17 @@
     === and !== are recommended to avoid unanticipated matches.
     =?= and !?= are called wildcard equality operators. They are used to match against ranges of values.
 
-3. 
+3. Case statement:
+    => There are three versions of the case statement you might use: case, casex, and casez.
+    => The case statement is used when wildcards are not necessary.
+    => If you want to use wildcards casez is recommended.
+    => Example:
+        casez (address[3:0])
+            4'b00zz: slot = 0;
+            4'b01zz: slot = 1;
+            4'b1000: slot = 2;
+            4'b1zzz: slot = 3;
+        endcase
 
+    => Case statements also support the unique and priority features.
+    => Also, we can have a default fall-through case that can be defined. This must be defined if unique is used.
