@@ -28,3 +28,6 @@
         address[1]: slot = 2;
         address[0]: slot = 3;
     endcase
+
+5. One-hot Encoding:
+    => In digital design, one-hot encoding is a method of representing binary data in which only one bit is set to 1, and all the others are set to 0.
