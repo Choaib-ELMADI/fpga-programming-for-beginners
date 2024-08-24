@@ -15,3 +15,6 @@
     .* which will connect all ports with the same name.
     .<name> which uses the name of the port you wish to connect.
     .<old_name>(<new_name>) which allows port renaming.
+
+=> In Vivado, to change the parameters in a testbench, select: Settings -> Simulation -> Generics\Parameters.
+=> In Vivado, to change the parameters in an implementation, select: Settings -> General -> Generics\Parameters.

@@ -4,6 +4,7 @@ module tb;
   parameter SELECTOR    = "UP_FOR";
   parameter UNIQUE_CASE = "FALSE";
   parameter TEST_CASE   = "LEADING_ONES";
+
   localparam BITS       = 16;
   localparam NUM_TEST   = 1000;
 
