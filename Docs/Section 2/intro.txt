@@ -15,3 +15,8 @@ II. Section 2: Introduction to Verilog RTL Design, Simulation, and Implementatio
         • Introducing data types
         • Packaging up code using functions
         • Project - creating combinational logic
+
+    => In chapter 3, we are going to cover the following main topics:
+        • Learn what sequential elements are and how to use them
+        • Project - counting button presses
+        • Looking at synchronization in detail
