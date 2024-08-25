@@ -18,3 +18,19 @@
 
 => In Vivado, to change the parameters in a testbench, select: Settings -> Simulation -> Generics\Parameters.
 => In Vivado, to change the parameters in an implementation, select: Settings -> General -> Generics\Parameters.
+
+=> In general, there are three ways of testing your design:
+    > Simulating using targeted testing
+    > Simulating using randomized testing
+    > Simulating using constrained randomization
+
+=> A generate statement can be used to selectively create code.
+-> The format of a generate statement is generate <condition>, as follows:
+    > generate
+    >   if (SELECTOR == "UNIQUE_CASE") begin: g_UNIQUE_CASE
+    >       // YOUR CODE HERE
+    >   end else if (SELECTOR == "CASE") begin: g_CASE
+    >       // YOUR CODE HERE
+    >   end
+    >   ...
+    > endgenerate

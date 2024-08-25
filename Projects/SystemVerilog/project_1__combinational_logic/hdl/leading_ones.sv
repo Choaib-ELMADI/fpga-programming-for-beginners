@@ -7,7 +7,7 @@ module leading_ones #(parameter SELECTOR, parameter BITS = 16) (
   generate
     if (SELECTOR == "UNIQUE_CASE") begin: g_UNIQUE_CASE
       always_comb begin
-        LED = '0; // Default to an output of 0
+        LED = '0;
 
         unique case (1'b1)
           SW[15]:  LED = 16;
@@ -26,14 +26,14 @@ module leading_ones #(parameter SELECTOR, parameter BITS = 16) (
           SW[2]:   LED = 3;
           SW[1]:   LED = 2;
           SW[0]:   LED = 1;
-          default: LED = 0;
+          // default: LED = 0;
         endcase // unique case (1'b1)
 
       end // always_comb
 
-    end else if (SELECTOR == "CASE") begin: g_CASE // block: g_UNIQUE_CASE
+    end else if (SELECTOR == "CASE") begin: g_CASE
       always_comb begin
-        LED = '0; // Default to an output of 0
+        LED = '0;
 
         case (1'b1)
           SW[15]:  LED = 16;
@@ -52,7 +52,7 @@ module leading_ones #(parameter SELECTOR, parameter BITS = 16) (
           SW[2]:   LED = 3;
           SW[1]:   LED = 2;
           SW[0]:   LED = 1;
-          default: LED = 0;
+          // default: LED = 0;
         endcase // case (1'b1)
 
       end // always_comb
@@ -61,27 +61,27 @@ module leading_ones #(parameter SELECTOR, parameter BITS = 16) (
       always_comb begin
         LED = '0;
 
-        for (int i = $high(SW); i >= $low(SW); i--) begin
+        for (int i=$high(SW); i>=$low(SW); i--) begin
           if (SW[i]) begin
             LED = i + 1;
             break;
           end
         end
 
-      end
+      end // always_comb
 
     end else if (SELECTOR == "UP_FOR") begin: g_DOWN_IF
       always_comb begin
         LED = '0;
 
-        for (int i = $low(SW); i <= $high(SW); i++) begin
+        for (int i=$low(SW); i<=$high(SW); i++) begin
           if (SW[i]) begin
             LED = i + 1;
           end
         end
 
-      end
+      end // always_comb
 
-    end
-  endgenerate
+    end // else if
+  endgenerate // generate
 endmodule // leading_ones
