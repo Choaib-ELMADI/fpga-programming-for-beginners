@@ -11,6 +11,6 @@ module add_sub #(parameter SELECTOR, parameter BITS = 16) (
     { a_in, b_in } = SW;
     if (SELECTOR == "ADD") LED = a_in + b_in;
     else                   LED = a_in - b_in;
-  end
+  end // always_comb begin
 
 endmodule // add_sub

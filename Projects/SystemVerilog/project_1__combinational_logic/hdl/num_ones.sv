@@ -7,10 +7,10 @@ module num_ones #(parameter BITS = 16) (
   always_comb begin
     LED = '0;
 
-    for (int i = $low(SW); i <= $high(SW); i++) begin
+    for (int i=$low(SW); i<=$high(SW); ++i) begin
       LED += SW[i];
-    end
+    end // for loop
 
-  end
+  end // always_comb begin
 
 endmodule // num_ones
